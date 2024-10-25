@@ -1,0 +1,27 @@
+project:
+  path: "/Users/begonalopez/Documents/Master/tfmProject"
+
+data:
+  path: "../data/filtered_scratch_data.csv"
+  dtypes:
+    numeric: [
+      "Clones",
+      "total-views",
+      "total-loves",
+      "total-remixes",
+      "total-favorites",
+      "CustomBlocks"
+    ]
+    ordinal: ["Abstraction",
+      "Parallelism",
+      "Logic",
+      "Synchronization",
+      "FlowControl",
+      "UserInteractivity",
+      "DataRepresentation",]
+    categorical: [
+      "is-remix"
+    ]
+
+output_data:
+  path: "../results/data_preprocessed.csv"
